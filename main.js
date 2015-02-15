@@ -22,8 +22,9 @@ function error(err) {
 }
 
 function clickGetCams() {
-  var zipCode = $('#zip-code').val();
+  var zipCode = $('#zip-code').val();s
   var url = 'http://api.wunderground.com/api/5ac2a3bc4dece267/webcams/q/' + zipCode + '.json';
+  paint(url)
 }
 
 function paint(url) {
